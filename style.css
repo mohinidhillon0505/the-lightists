@@ -122,3 +122,40 @@ footer {
     font-size: 40px;
   }
 }
+/* BRANDS GRID */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  align-items: center;
+}
+
+.brand-card {
+  border: 1px solid #eee;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.brand-card img {
+  max-width: 100%;
+  max-height: 80px;
+  filter: grayscale(100%);
+}
+
+.brand-card:hover {
+  border-color: #ccc;
+  transform: translateY(-4px);
+}
+
+.brand-card:hover img {
+  filter: grayscale(0%);
+}
+
+/* SMALL HERO */
+.hero.small {
+  padding: 80px 20px 60px;
+}
