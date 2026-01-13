@@ -159,3 +159,56 @@ footer {
 .hero.small {
   padding: 80px 20px 60px;
 }
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-bottom: 1px solid #eee;
+}
+
+.navbar .logo {
+  height: 60px;
+}
+
+.navbar nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+}
+
+/* BRANDS PAGE */
+.brands-page {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.brands-page h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.brands-page p {
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  align-items: center;
+}
+
+.brands-grid img {
+  max-width: 180px;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.brands-grid img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
